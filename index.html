@@ -1,20 +1,141 @@
 <!DOCTYPE html>
 <body>
-<span id = "working">Something isn't working right...</span>
+<span id = "working">Javascript is malfunctioning or disabled.</span>
 <button onclick = "plzhelp()" id = "helpButton">need help?</button><p id = "help" ></p>
-<img height = 500px id = "artpiece" src = "https://files.graphiq.com/2307/media/images/White_430113_i0.png">
-<br><button onclick = "reveal()"> Reveal </button>
-<button onclick = "changePiece()"> Next </button>
-<br>Enter your answers below (or just say them to yourself):
-<br>Artist: <input id = "userA" type = script size = 33> <span id = "artist">Artist Answer</span>
-<br>Title: <input id = "userT" type = script size = 33> <span id = "title">Title Answer</span>
-<br>Region: <input id = "userR" type = script size = 30> <span id = "region">Region Answer</span>
-<br>Period: <input id = "userP" type = script size = 31> <span id = "period">Period Answer</span>
+<table>
+<tr>
+	<td width = 500px>
+		<br>Enter your answers below (or just say them to yourself):
+		<br>Artist: <input id = "userA" type = script size = 33> <span id = "artist">Artist Answer</span>
+		<br>Title: <input id = "userT" type = script size = 33> <span id = "title">Title Answer</span>
+		<br>Region: <input id = "userR" type = script size = 30> <span id = "region">Region Answer</span>
+		<br>Period: <input id = "userP" type = script size = 31> <span id = "period">Period Answer</span>
+		<br><br><br><button onclick = "reveal()"> Reveal </button>
+	</td>
+	<td width = 700px height = 600px>
+		<img onclick = "changePiece()" id = "artpiece" src = "https://files.graphiq.com/2307/media/images/White_430113_i0.png">
+	</td>
+</tr>
+</table>
 
 <br><br>
 <em>Do not distribute without creator's permission.<br>
-Something wrong? Contact 1dustin2@mail.fresnostate.edu (through a Fresno State email)</em>
 <br><br><br><br>
+<span id = "artList">https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/L'Embarquement_pour_Cythere,_by_Antoine_Watteau,_from_C2RMF_retouched.jpg/1280px-L'Embarquement_pour_Cythere,_by_Antoine_Watteau,_from_C2RMF_retouched.jpg
+Jean Antione Watteau
+The Pilgrimage Cythera
+France
+Rococo
+https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Fragonard,_The_Swing.jpg/300px-Fragonard,_The_Swing.jpg
+Fragonard
+The Swing
+France
+Rococo
+https://upload.wikimedia.org/wikipedia/commons/4/42/Kauffmann_Cornelia_mater_Gracchorum.jpg
+Angelica Kauffmann
+Cornelia Presenting her Children as her Treasures
+Britain
+Neoclassacism
+https://upload.wikimedia.org/wikipedia/commons/7/70/Jacques-Louis_David_-_Oath_of_the_Horatii_-_Google_Art_Project.jpg
+Jacque Louis David
+Oath of the Horatii
+France
+Neoclassicism
+https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Jacques_Louis_David_-_Bonaparte_franchissant_le_Grand_Saint-Bernard,_20_mai_1800_-_Google_Art_Project.jpg/220px-Jacques_Louis_David_-_Bonaparte_franchissant_le_Grand_Saint-Bernard,_20_mai_1800_-_Google_Art_Project.jpg
+David
+Napoleon Crossing the St. Bernard Alps
+France
+Neoclassicism
+https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Jacques-Louis_David_-_Marat_assassinated_-_Google_Art_Project_2.jpg/300px-Jacques-Louis_David_-_Marat_assassinated_-_Google_Art_Project_2.jpg
+David
+Death of Marat
+France
+Neoclassicism
+https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg/300px-JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg
+Gericault
+The Raft of the Medusa
+France
+Romanticism
+https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jean_Auguste_Dominique_Ingres,_La_Grande_Odalisque,_1814.jpg/300px-Jean_Auguste_Dominique_Ingres,_La_Grande_Odalisque,_1814.jpg
+Dominque Ingres
+Grand Odalisque
+France
+Romanticism
+https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Slave-ship.jpg/300px-Slave-ship.jpg
+William Turner
+The Slave Ship
+England
+Romanticism
+https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_thin_black_margin.jpg/300px-El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_thin_black_margin.jpg
+Goya
+The Third of May
+Spain
+Romanticism
+https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project_2.jpg/1280px-Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project_2.jpg
+Courbet
+Burial at Ornans
+France
+Realism
+https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg/640px-Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg
+Courbet
+The Stone Breakers
+France
+Realism
+https://uploads0.wikiart.org/images/jean-francois-millet/the-gleaners-1857.jpg!Large.jpg
+Millet
+The Gleaners
+France
+Realism
+http://www.manet.org/images/gallery/the-luncheon-on-the-grass.jpg
+Manet
+Luncheon on the Grass
+France
+Naturalism
+https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Edouard_Manet_-_Olympia_-_Google_Art_Project_3.jpg/1280px-Edouard_Manet_-_Olympia_-_Google_Art_Project_3.jpg
+Manet
+Olympia
+France
+Naturalism
+https://uploads2.wikiart.org/images/claude-monet/impression-sunrise.jpg!Large.jpg
+Monet
+Impression Sunrise
+France
+Impressionism
+https://upload.wikimedia.org/wikipedia/commons/3/37/Monet_grainstack-in-the-morning-snow-effect-1891_W1280.jpg
+Monet
+Grainstacks
+France
+Impressionism
+https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg/1280px-Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg
+Renoir
+The Boating Party
+France
+Impressionism
+https://upload.wikimedia.org/wikipedia/commons/5/54/Edgar_Degas_-_Rehearsal_on_Stage.jpg
+Degas
+The Rehearsal on Stage
+France
+Impressionism
+https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.png/1280px-A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.png
+Seurat
+La Grand Jatte
+France
+Post Impressionism
+https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vincent_Willem_van_Gogh_076.jpg/776px-Vincent_Willem_van_Gogh_076.jpg
+Van Gogh
+Night Cafe
+France
+Post Impressionism
+https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/VanGogh-starry_night_ballance1.jpg/962px-VanGogh-starry_night_ballance1.jpg
+Van Gogh
+Starry Night
+France
+Post Impressionism
+https://upload.wikimedia.org/wikipedia/commons/f/fa/Lautrec_at_the_moulin_rouge_1892.jpg
+Lautrec
+At The Moulin Rouge
+France
+Post Impressionism</span>
 </body>
 <script type = "text/javascript">
 	function plzhelp(){
@@ -22,7 +143,7 @@ Something wrong? Contact 1dustin2@mail.fresnostate.edu (through a Fresno State e
 		"<br>Help has arrived!<br>Look at the image and identify<br>the artist, title, period and region. Once you have decided<br>on your answers, click reveal and the four correct responses<br>will be shown. Then click next for another image. After<br>all images have been exhausted, they are shown again in a <br>different order.<br>";
 		*/
 		document.getElementById("help").innerHTML =
-		"Look at the image and identify the artist, title, period and region. Once you have decided on your answers, click reveal and the four correct responses will be shown (your answers aren't checked, the input fields are just to test yourself). Then click next for another image. After all images have been exhausted, they are shown again in a different order.";
+		"Look at the image and identify the artist, title, period, and region. Once you have decided on your answers, click \"Reveal\" and the four correct responses will be shown (your answers aren't checked, the input fields are just to test yourself). Then click the image for the next artpiece. After all pieces have been exhausted, they are shown again in a different order.";
 		document.getElementById("helpButton").innerHTML = "Hide Help";
 		document.getElementById("helpButton").onclick = hideHelp;
 	}
@@ -31,16 +152,19 @@ Something wrong? Contact 1dustin2@mail.fresnostate.edu (through a Fresno State e
 		document.getElementById("helpButton").innerHTML = "Show Help";
 		document.getElementById("helpButton").onclick = plzhelp;
 	}
-	document.getElementById("working").innerHTML = "Everything seems to be working :D";
+	document.getElementById("working").innerHTML = "";
 	//var artpieces = httpGet("http://pastebin.com/raw/WkiHLLTn").split('\n');
 	//var artpieces = httpGet("http://pastebin.com/raw/KjaYg7Ti").split('\n');
 	//var artpieces = httpGet("http://pastebin.com/raw/ugm5tBpQ").split('\n');
-	var artpieces = httpGet("http://pastebin.com/raw/uYiCQAJZ").split('\n');
+	//var artpieces = httpGet("http://pastebin.com/raw/uYiCQAJZ").split('\n');
+	var artpieces = document.getElementById("artList").innerHTML.split('\n');
+	document.getElementById("artList").innerHTML = "";
 	var URLs = [];
 	var artists = [];
 	var titles = [];
 	var periods = [];
 	var regions = [];
+	widthChanged = false; //used for staggering img width attribute modifications to prevent infinite loop of self-triggering changes
 	
 	for(var i = 0; i < artpieces.length; i = i + 5){
 		URLs.push(artpieces[i + 0]);
@@ -49,6 +173,31 @@ Something wrong? Contact 1dustin2@mail.fresnostate.edu (through a Fresno State e
 		regions.push(artpieces[i + 3]);
 		periods.push(artpieces[i + 4]);
 	}
+	
+	var preloadedImages = [];
+	for(i = 0; i < URLs.length; i++){
+		preloadedImages.push(new Image());
+		preloadedImages[i].src = URLs[i];
+	}
+	
+	// limiting image width to 700px, increasing if too thin
+	window.setTimeout(function(){
+		for(i = 0; i < preloadedImages.length; i++){
+			if(preloadedImages[i].width > 700){
+				preloadedImages[i].width = 700;
+			}
+			if(preloadedImages[i].width < 400){
+				preloadedImages[i].width = 400;
+			}
+		}
+		changePiece();
+	}, 1000);
+	
+	//alert(URLs);
+	//alert(artists);
+	//alert(titles);
+	//alert(periods);
+	//alert(regions);
 	var currentPiece = artists.length - 1;
 	function reveal(){
 		document.getElementById("artist").innerHTML = artists[currentPiece];
@@ -56,7 +205,14 @@ Something wrong? Contact 1dustin2@mail.fresnostate.edu (through a Fresno State e
 		document.getElementById("period").innerHTML = periods[currentPiece];
 		document.getElementById("region").innerHTML = regions[currentPiece];
 	}
+	function checkWidth(){
+		console.log("Current artpiece display width: " + document.getElementById("artpiece").width + "px");
+	}
+	function logPreloadedWidths(){
+		for(i = 0; i < preloadedImages.length; i++) console.log(preloadedImages[i].width + "px");
+	}
 	function changePiece(){
+		console.log("Changing artpiece...............................");
 		document.getElementById("userA").value = "";
 		document.getElementById("userT").value = "";
 		document.getElementById("userR").value = "";
@@ -90,11 +246,32 @@ Something wrong? Contact 1dustin2@mail.fresnostate.edu (through a Fresno State e
 				temp = regions[i];
 				regions[i] = regions[offSet];
 				regions[offSet] = temp;
+				
+				temp = preloadedImages[i];
+				preloadedImages[i] = preloadedImages[offSet];
+				preloadedImages[offSet] = temp;
 			}
 		}
 		document.getElementById("artpiece").src = URLs[currentPiece];
+		console.log(titles[currentPiece]);
+		console.log("Image width: " + document.getElementById("artpiece").width + "px");
+		document.getElementById("artpiece").width = preloadedImages[currentPiece].width;
+		
 	}
-	changePiece();
+	
+	//window.setTimeout(changePiece(), 3000);
+	
+	function correctImageWidth(){
+		// old image modification staggering method
+		/*if(widthChanged){
+			widthChanged = false;
+			console.log("Width already modified.");
+			return;
+		}*/
+		console.log(titles[currentPiece]);
+		console.log("Image width: " + document.getElementById("artpiece").width + "px");
+		if(document.getElementById("artpiece").width > 700) document.getElementById("artpiece").width = 700;
+	}
 	function httpGet(theUrl){
 		var xmlHttp = new XMLHttpRequest();
 		xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
